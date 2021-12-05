@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="style.css">
+
+
+
+
+
+
+
+
+<div class="container">
+    <header class="header">
+        <h1 id="title" class="text-center">"Jakes Barbaque"</h1>
+        <p id="description" class="description text-center">
+            Thanks for taking the time to help us improving our Grub.
+        </p>
+    </header>
+    <form id="survey-form">
+        <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+        </div>
+        <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required />
+        </div>
+        <div class="form-group">
+            <label id="number-label" for="number">Age<span class="clue">(optional)</span></label
+        >
+        <input
+          type="number"
+          name="age"
+          id="number"
+          min="10"
+          max="99"
+          class="form-control"
+          placeholder="Age"
+        />
+      </div>
+      <div class="form-group">
+        <p>What are your favorite foods we offer?</p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>Select current role</option>
+          <option value="Ribs">Ribs</option>
+          <option value="chicken">Chicken</option>
+          <option value="brisket">Brisket</option>
+          <option value="sausage">Sausage</option>
+          <option value="sides">Sides</option>
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <p>Would you recommend our BBQ joint to your friends?</p>
+        <label>
+          <input
+            name="user-recommend"
+            value="definitely"
+            type="radio"
+            class="input-radio"
+            checked
+          />Definitely</label
+        >
+        <label>
+          <input
+            name="user-recommend"
+            value="maybe"
+            type="radio"
+            class="input-radio"
+          />Maybe</label
+        >
+  
+        <label
+          ><input
+            name="user-recommend"
+            value="not-sure"
+            type="radio"
+            class="input-radio"
+          />Not sure</label
+        >
+      </div>
+  
+      <div class="form-group">
+        <p>
+          What do you like most about our Restaurant?
+        </p>
+        <select id="most-like" name="mostLike" class="form-control" required>
+          <option disabled selected value>Select an option</option>
+          <option value="decor">Decor</option>
+          <option value="the food">The Food</option>
+          <option value="the people">The People</option>
+          <option value="all of the above">All of the above</option>
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <p>
+          "Please give us some feed back on improvements we can make to better serve you."
+          <span class="clue">(Check all that apply)</span>
+        </p>
+  
+        <label>
+          <input
+            name="prefer"
+            value="Meat Selection"
+            type="checkbox"
+            class="input-checkbox"
+                 />Meat Selection</label>
+
+            <label>
+          <input
+            name="prefer"
+            value="Sides Selection"
+            type="checkbox"
+            class="input-checkbox"
+           />Sides Selection</label>
+
+            <label>
+          <input
+            name="prefer"
+            value="Sides Selection"
+            type="checkbox"
+            class="input-checkbox"
+          />Sides Selection</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="Soda brands"
+            type="checkbox"
+            class="input-checkbox"
+          />Soda brands</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="Beer and Wine Selection"
+            type="checkbox"
+            class="input-checkbox"
+          />Beer and Wine Selection</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="More seating"
+            type="checkbox"
+            class="input-checkbox"
+          />More seating</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="Deserts"
+            type="checkbox"
+            class="input-checkbox"
+          />Deserts</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="Add Jukebox"
+            type="checkbox"
+            class="input-checkbox"
+          />Add Jukebox</label
+        >
+       
+      </div>
+  
+      <div class="form-group">
+        <p>Any comments or suggestions?</p>
+        <textarea
+          id="comments"
+          class="input-textarea"
+          name="comment"
+          placeholder="Enter your comment here..."
+        ></textarea>
+      </div>
+  
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
